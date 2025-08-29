@@ -5,21 +5,21 @@
 class KdGen < Formula
   desc "A Go code generator for enums."
   homepage "https://github.com/khuong02/kd-gen"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/khuong02/kd-gen/releases/download/0.2.2/kd-gen_darwin_amd64.tar.gz"
-      sha256 "be17ff626147ad33e8c23be7f3fd7aa6c1653ffb58db933442f05394f5edde8a"
+      url "https://github.com/khuong02/kd-gen/releases/download/0.2.3/kd-gen_darwin_amd64.tar.gz"
+      sha256 "5573253a82426b8e9830c759bd464f3228d2750688cb7ae219dcc06941af4e50"
 
       def install
         bin.install "kd-gen"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/khuong02/kd-gen/releases/download/0.2.2/kd-gen_darwin_arm64.tar.gz"
-      sha256 "2d072ff6dcf936330ebcbba5b4ff8a449e03e7e54d37db33e0c2ce233d0926ba"
+      url "https://github.com/khuong02/kd-gen/releases/download/0.2.3/kd-gen_darwin_arm64.tar.gz"
+      sha256 "77b9403e7db89c3815b7d451863c7255fe84c3a22f2e94d02cac22a07fda93bb"
 
       def install
         bin.install "kd-gen"
@@ -29,15 +29,15 @@ class KdGen < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/khuong02/kd-gen/releases/download/0.2.2/kd-gen_linux_amd64.tar.gz"
-      sha256 "463993bc9cd37e75beec08e525f271caf3f72bbbf39868d7c5e16ebe6458f899"
+      url "https://github.com/khuong02/kd-gen/releases/download/0.2.3/kd-gen_linux_amd64.tar.gz"
+      sha256 "ba53250b2cdfaabe0ccc85708d32978e23acc0d00c466b9f36ae17b52ffdcd1a"
       def install
         bin.install "kd-gen"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/khuong02/kd-gen/releases/download/0.2.2/kd-gen_linux_arm64.tar.gz"
-      sha256 "99d412692075110497667beb7e277a2a2d002b1db97401fe075488ffef7a7ec9"
+      url "https://github.com/khuong02/kd-gen/releases/download/0.2.3/kd-gen_linux_arm64.tar.gz"
+      sha256 "89c03006df42e653c31d1497dd21c2719b16af3e1a3edcf06bb4842e348ccba8"
       def install
         bin.install "kd-gen"
       end
