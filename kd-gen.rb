@@ -11,7 +11,7 @@ class KdGen < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/khuong02/kd-gen/releases/download/0.2.3/kd-gen_darwin_amd64.tar.gz"
-      sha256 "5573253a82426b8e9830c759bd464f3228d2750688cb7ae219dcc06941af4e50"
+      sha256 "6bbfcc15bc722d7c077aae0e0fb43a685b7d02828f6c3ba2e3203e3939baa593"
 
       def install
         bin.install "kd-gen"
@@ -19,7 +19,7 @@ class KdGen < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/khuong02/kd-gen/releases/download/0.2.3/kd-gen_darwin_arm64.tar.gz"
-      sha256 "77b9403e7db89c3815b7d451863c7255fe84c3a22f2e94d02cac22a07fda93bb"
+      sha256 "1cda8c2954fcddf215990d1f5362e1a1924cf5e6f04365f336dce22e53d2d2c7"
 
       def install
         bin.install "kd-gen"
@@ -30,14 +30,14 @@ class KdGen < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://github.com/khuong02/kd-gen/releases/download/0.2.3/kd-gen_linux_amd64.tar.gz"
-      sha256 "ba53250b2cdfaabe0ccc85708d32978e23acc0d00c466b9f36ae17b52ffdcd1a"
+      sha256 "4833c56a2b5c87da37cbc536b076a6fe55e40dbe8548ba38e6d2a890112556b9"
       def install
         bin.install "kd-gen"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/khuong02/kd-gen/releases/download/0.2.3/kd-gen_linux_arm64.tar.gz"
-      sha256 "89c03006df42e653c31d1497dd21c2719b16af3e1a3edcf06bb4842e348ccba8"
+      sha256 "7a81122e7fd06c2fb3a8bad9e2e7f226c30fde90920beed3e66450ac68513e9f"
       def install
         bin.install "kd-gen"
       end
